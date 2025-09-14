@@ -1,8 +1,8 @@
-# gomati
+# PyGomati
 
-*A simple Google Maps tile downloader and stitcher.*
+*A simple Python Google Maps tile downloader and stitcher based on gomati by doersino.*
 
-**Note: I've reimplemented (and significantly extended) this tool in Python – meet [ærialbot](http://github.com/doersino/aerialbot). Despite having been designed to power a set of Twitter bots, if you configure it to download an area around a fixed point and leave the Twitter API credentials blank, it's essentially equivalent to this tool. Notably, as it uses a threadpool for tile downloading, it's *significantly* faster than this tool.**
+**Note: doersino reimplemented (and significantly extended) the original gomati tool in Python – meet [ærialbot](http://github.com/doersino/aerialbot) - you might want to check that out.**
 
 
 ## Setup & Usage
@@ -12,10 +12,10 @@ Since Gomati is a **humble shell script**, you'll need `bash`, along with common
 Using this tool is as simple as **entering your desired latitude and longitude** in the source code, optionally taking a peek at the other parameters you can modify, and running:
 
 ```
-bash gomati.sh
+python PyGomati.py
 ```
 
-A more detailed **list of requirements and usage/configuration instructions**, along with a couple of tips and tricks, is **located at the top of `gomati.sh`**.
+
 
 ![GOMATI_ZOOM=15 GOMATI_LATITUDE=43.078899 GOMATI_LONGITUDE=-79.072873 GOMATI_WIDTH=16 GOMATI_HEIGHT=6 GOMATI_RESIZE=1500x1000 bash gomati.sh](example.jpg)
 
